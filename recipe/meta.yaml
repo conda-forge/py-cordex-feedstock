@@ -1,5 +1,5 @@
 {% set name = "py-cordex" %}
-{% set version = "0.2.1" %}
+{% set version = "0.3.0" %}
 
 package:
   name: "{{ name|lower }}"
@@ -31,10 +31,6 @@ test:
     - cordex 
   requires:
     - pytest
-  source_files:
-    - tests
-  commands:
-    - pytest tests
 
 about:
   home: https://github.com/euro-cordex/py-cordex 
