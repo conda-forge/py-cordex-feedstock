@@ -1,5 +1,5 @@
 {% set name = "py-cordex" %}
-{% set version = "0.2.1" %}
+{% set version = "0.3.0" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 71aaf86ffe614fbd1462fee557b2147eed41e27bdb5802d3d78193b5792f00ad
+  sha256: 528eda25ea035d7ce96a986a83a6399aa745a8055d93df4d25d87be7901b016c
 
 build:
   number: 0
@@ -25,16 +25,13 @@ requirements:
     - xarray >=0.15
     - cartopy >=0.19
     - geopandas >=0.6
+    - cftime
 
 test:
   imports:
     - cordex 
   requires:
     - pytest
-  source_files:
-    - tests
-  commands:
-    - pytest tests
 
 about:
   home: https://github.com/euro-cordex/py-cordex 
