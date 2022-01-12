@@ -25,6 +25,7 @@ requirements:
     - xarray >=0.15
     - cartopy >=0.19
     - geopandas >=0.6
+    - cftime
 
 test:
   imports:
