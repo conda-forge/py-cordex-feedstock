@@ -1,18 +1,18 @@
 {% set name = "py-cordex" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 528eda25ea035d7ce96a986a83a6399aa745a8055d93df4d25d87be7901b016c
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 7a59f2ef1675cdd4c29f663bfe428865ce245df2bb93a0b9fc8b3ccd0c44dc0e
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -29,19 +29,19 @@ requirements:
 
 test:
   imports:
-    - cordex 
+    - cordex
   requires:
     - pytest
 
 about:
-  home: https://github.com/euro-cordex/py-cordex 
+  home: https://github.com/euro-cordex/py-cordex
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: "creation of cordex grids"
+  summary: creation of cordex grids
   doc_url: https://py-cordex.readthedocs.io
-  dev_url: https://github.com/euro-cordex/py-cordex 
+  dev_url: https://github.com/euro-cordex/py-cordex
 
 extra:
   recipe-maintainers:
-    - larsbuntemeyer 
+    - larsbuntemeyer
