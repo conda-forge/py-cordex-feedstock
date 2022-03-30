@@ -1,5 +1,5 @@
 {% set name = "py-cordex" %}
-{% set version = "0.3.1" %}
+{% set version = "0.3.2" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 7a59f2ef1675cdd4c29f663bfe428865ce245df2bb93a0b9fc8b3ccd0c44dc0e
+  sha256: 35e68a1ee79d8c56a043c97b4696e39bea052ae24407d4633be0455fbfcafa93
 
 build:
   number: 0
@@ -25,7 +25,6 @@ requirements:
     - xarray >=0.15
     - cartopy >=0.19
     - geopandas >=0.6
-    - cftime
 
 test:
   imports:
