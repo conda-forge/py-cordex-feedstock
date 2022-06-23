@@ -1,5 +1,5 @@
 {% set name = "py-cordex" %}
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: aae70b37fb5a8455221ed7527c63b523d71474f8024bd4e55ce4311a003f1840
+  sha256: f3cf56f9f3ed18f3b8004ec0a55f0bc5d74c6c161182763d1b4f24dbc69ce89e
 
 build:
   number: 0
