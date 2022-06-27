@@ -10,7 +10,7 @@ source:
   sha256: f3cf56f9f3ed18f3b8004ec0a55f0bc5d74c6c161182763d1b4f24dbc69ce89e
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: "{{ PYTHON }} -m pip install . -vv"
 
@@ -18,6 +18,8 @@ requirements:
   host:
     - pip
     - python >=3.7
+    - setuptools_scm
+    
   run:
     - python >=3.7
     - numpy >=1.17
@@ -25,6 +27,7 @@ requirements:
     - xarray >=0.15
     - cartopy >=0.19
     - geopandas >=0.6
+    - setuptools >=40.4
 
 test:
   imports:
