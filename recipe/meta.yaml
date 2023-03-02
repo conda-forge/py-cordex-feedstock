@@ -1,5 +1,5 @@
 {% set name = "py-cordex" %}
-{% set version = "0.4.1" %}
+{% set version = "0.5.0" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,26 +7,26 @@ package:
 
 source:
   url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: f3cf56f9f3ed18f3b8004ec0a55f0bc5d74c6c161182763d1b4f24dbc69ce89e
+  sha256: ff7a6ff503d2c0590d529592363eed7a80785619f0e34dcd2f45f5f580528ee7
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.8
     - setuptools_scm
     
   run:
-    - python >=3.7
+    - python >=3.8
     - numpy >=1.17
     - pooch >=1.0
     - xarray >=0.15
-    - cartopy >=0.19
-    - geopandas >=0.6
+    - cf_xarray >=0.8
+    - pyproj >=3.3.0
     - setuptools >=40.4
 
 test:

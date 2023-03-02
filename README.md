@@ -1,11 +1,11 @@
-About py-cordex
-===============
+About py-cordex-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/py-cordex-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/euro-cordex/py-cordex
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/py-cordex-feedstock/blob/main/LICENSE.txt)
 
 Summary: creation of cordex grids
 
