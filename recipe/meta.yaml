@@ -26,7 +26,7 @@ requirements:
     - pooch >=1.0
     - xarray >=0.15
     - cf_xarray >=0.8
-    - cartopy >=0.19
+    - pyproj>=3.3.0
     - geopandas >=0.6
     - setuptools >=40.4
 
