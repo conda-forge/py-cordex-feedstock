@@ -24,7 +24,7 @@ requirements:
     - python >=3.8
     - numpy >=1.17
     - pooch >=1.0
-    - xarray >=0.15
+    - xarray >=0.15, !=2023.9.0
     - cf_xarray >=0.8
     - pyproj >=3.3.0
     - setuptools >=40.4
