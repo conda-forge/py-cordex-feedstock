@@ -1,5 +1,5 @@
 {% set name = "py-cordex" %}
-{% set version = "0.6.3" %}
+{% set version = "0.6.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,8 +7,8 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4dfc61196265954cfa711d4348c4da681e6112e705e8c70efb48908a4b6829fe
-
+  sha256: 3493c148c9854d79b300157adac38205586f0feaa7820bae048c993c0665439a
+  
 build:
   number: 0
   noarch: python
@@ -24,7 +24,7 @@ requirements:
     - python >=3.8
     - numpy >=1.17
     - pooch >=1.0
-    - xarray >=0.15
+    - xarray >=0.15, !=2023.9.0
     - cf_xarray >=0.8
     - pyproj >=3.3.0
     - setuptools >=40.4
